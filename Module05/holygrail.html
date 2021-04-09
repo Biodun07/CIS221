@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Holy Grail</title>	
+</head>
+
+	<style>
+.parent {
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+	height: 100vh;
+	grid-template-areas: 
+    'header header header header header header' 
+    'left middle middle middle middle right' 
+    'footer footer footer footer footer footer';
+}
+  header  {
+    padding: 2rem;
+    grid-column: 1 / 4;
+	  background-color: cadetblue;
+  }
+
+  .left-side {
+    grid-column: 1 / 2;
+	  display: grid;
+	background-color: green;
+	grid-template-columns: minmax(150px, 25%) 1fr;
+  }
+
+  main {
+    grid-column: 2 / 3;
+  }
+
+   .right-side {
+    grid-column: 3 / 4;
+	   display: grid;
+	 background-color: darkgreen;
+	   grid-template-columns: minmax(150px, 25%) 1fr;
+  }
+
+   footer {
+	   padding: 2rem;
+    grid-column: 1 / 4;
+	    background-color: cadetblue;
+  }
+	
+	
+	</style>
+	
+	<body>	
+<div class="parent">
+    <header class="blue section">Header</header>
+    <div class="left-side green section" contenteditable>Left Sidebar</div>
+    <main class="section coral" contenteditable> Main Content</main>
+    <div class="right-side green section" contenteditable>Right Sidebar</div>
+    <footer class="blue section">Footer</footer>
+  </div>
+  
+</body>
+</html>
