@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+
+.parent {
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+	height: 100vh;
+	grid-template-areas: 
+    'header header header header header header' 
+    'left middle middle middle middle right' 
+    'footer footer footer footer footer footer';
+}
+  header  {
+    padding: 2rem;
+    grid-column: 1 / 4;
+	  background-color: cadetblue;
+  }
+
+  .left-side {
+    grid-column: 1 / 2;
+	  display: grid;
+	background-color: green;
+	grid-template-columns: minmax(150px, 25%) 1fr;
+  }
+
+  main {
+    grid-column: 2 / 3;
+  }
+
+   .right-side {
+    grid-column: 3 / 4;
+	   display: grid;
+	 background-color: darkgreen;
+	   grid-template-columns: minmax(150px, 25%) 1fr;
+  }
+
+   footer {
+	   padding: 2rem;
+    grid-column: 1 / 4;
+	    background-color: cadetblue;
+  }
