@@ -69,6 +69,7 @@ html {
 	font-size: 4em;
 	text-shadow: 4px 4px 6px
 		rgba(0,0,0,75);
+	background-image: url("../images/bg_banner.jpg");
 }
 
 .main h2 {
