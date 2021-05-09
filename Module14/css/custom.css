@@ -14,6 +14,7 @@
 	width: 19%;
 }
 
+
 .boxes div {
 	-webkit-flex: 1 1 250px;
 	flex: 1 1 250px;
@@ -30,6 +31,7 @@
 .boxes .more {
 	margin-top: auto;
 }
+
 .footer .copyright {
 	-webkit-flex-flow: 2 1 500px;
 	flex: 2 1 500px;
